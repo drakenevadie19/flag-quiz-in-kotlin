@@ -35,6 +35,7 @@
 
 <!--            tools:max => divide bar to x portion-->
             <ProgressBar
+                android:id="@+id/progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
