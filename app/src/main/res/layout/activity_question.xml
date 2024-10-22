@@ -17,15 +17,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="TCU">
-
-        </TextView>
+            tools:text="@string/flag_question"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp" />
 
         <ImageView
+            android:id="@+id/flag_iv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:src="@drawable/ic_flag_of_argentina"
-            android:contentDescription="A flag"
+            android:contentDescription="@string/flag_image_description"
             tools:ignore="ImageContrastCheck"
             />
 
@@ -45,6 +47,7 @@
                 />
 
             <TextView
+                android:id="@+id/question_tv"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -53,11 +56,21 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/option_ll"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center" />
 
-        </LinearLayout>
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp" />
 
     </LinearLayout>
 

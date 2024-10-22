@@ -3,6 +3,7 @@ package edu.tcu.dotnguyen.quiz
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -39,9 +40,15 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
         selectedOptionIdx = -1
         answerRevealed = false
         val question = questions[questionIdx]
+
+        // setup the flag questions
         findViewById<TextView>(R.id.question_tv).text = question.question
+
         // setup the flag image
+        findViewById<ImageView>(R.id.flag_iv).setImageResource(question.imageResId)
+
         // Set up the progressbar progress
+
         setOptionTvs(question)
 
         // Change the submit button text

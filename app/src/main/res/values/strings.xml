@@ -5,4 +5,14 @@
     <string name="login_title_description">Please enter your name.</string>
     <string name="input_hint">Name</string>
     <string name="button_text">Start</string>
+
+    <string name="flag_question">What country does this flag belong to?</string>
+    <string name="flag_image_description">A Flag</string>
+    <string name="submit_button">Submit</string>
+
+    <string name="result">Result</string>
+    <string name="result_image">Successful result</string>
+    <string name="good_result_message">Congratulations, %1$d!</string>
+    <string name="result_score">Your score is %1$d out of 10</string>
+    <string name="try_again_btn">Try again</string>
 </resources>
